@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>获取信用卡Token | Developers</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Luxpag接入API文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.6ed5b8ce.css" as="style"><link rel="preload" href="/assets/js/app.f3b57d1f.js" as="script"><link rel="preload" href="/assets/js/2.9c343760.js" as="script"><link rel="preload" href="/assets/js/24.681e6971.js" as="script"><link rel="prefetch" href="/assets/js/10.8618dc8a.js"><link rel="prefetch" href="/assets/js/11.54804f98.js"><link rel="prefetch" href="/assets/js/12.fd5266d6.js"><link rel="prefetch" href="/assets/js/13.5878dc5e.js"><link rel="prefetch" href="/assets/js/14.e37dce35.js"><link rel="prefetch" href="/assets/js/15.3f664dc3.js"><link rel="prefetch" href="/assets/js/16.135f056d.js"><link rel="prefetch" href="/assets/js/17.dcdca925.js"><link rel="prefetch" href="/assets/js/18.d18f84a0.js"><link rel="prefetch" href="/assets/js/19.896aca97.js"><link rel="prefetch" href="/assets/js/20.6d95ac84.js"><link rel="prefetch" href="/assets/js/21.3a406baf.js"><link rel="prefetch" href="/assets/js/22.fe822188.js"><link rel="prefetch" href="/assets/js/23.22276b60.js"><link rel="prefetch" href="/assets/js/25.18c35558.js"><link rel="prefetch" href="/assets/js/26.15e9de2d.js"><link rel="prefetch" href="/assets/js/27.9f5f5d90.js"><link rel="prefetch" href="/assets/js/28.040df153.js"><link rel="prefetch" href="/assets/js/29.aba35992.js"><link rel="prefetch" href="/assets/js/3.01192a9f.js"><link rel="prefetch" href="/assets/js/30.6273ed3e.js"><link rel="prefetch" href="/assets/js/31.a50e6980.js"><link rel="prefetch" href="/assets/js/32.535a42b4.js"><link rel="prefetch" href="/assets/js/33.f8bd169f.js"><link rel="prefetch" href="/assets/js/34.bf1f664d.js"><link rel="prefetch" href="/assets/js/35.6c0ae0ea.js"><link rel="prefetch" href="/assets/js/36.78a97250.js"><link rel="prefetch" href="/assets/js/37.00702025.js"><link rel="prefetch" href="/assets/js/38.f0efe842.js"><link rel="prefetch" href="/assets/js/39.4bada89c.js"><link rel="prefetch" href="/assets/js/4.7ea2004c.js"><link rel="prefetch" href="/assets/js/40.fc29f535.js"><link rel="prefetch" href="/assets/js/41.6dc35c35.js"><link rel="prefetch" href="/assets/js/42.bfc4815a.js"><link rel="prefetch" href="/assets/js/43.b750087a.js"><link rel="prefetch" href="/assets/js/44.e52936a2.js"><link rel="prefetch" href="/assets/js/45.df0ec990.js"><link rel="prefetch" href="/assets/js/5.87db3a88.js"><link rel="prefetch" href="/assets/js/6.18b4183d.js"><link rel="prefetch" href="/assets/js/7.d8a9c17b.js"><link rel="prefetch" href="/assets/js/8.cc19e510.js"><link rel="prefetch" href="/assets/js/9.f7437661.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6ed5b8ce.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cn/" class="home-link router-link-active"><img src="/luxpag-logo-long.png" alt="Developers" class="logo"> <span class="site-name can-hide">Developers</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cn/reference/" class="nav-link router-link-active">
+  接口
+</a></div><div class="nav-item"><a href="/cn/faq.html" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><a href="/cn/changelog.html" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  Home
+</a></li><li class="dropdown-item"><!----> <a href="/en/reference/token.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/cn/reference/token.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cn/reference/" class="nav-link router-link-active">
+  接口
+</a></div><div class="nav-item"><a href="/cn/faq.html" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><a href="/cn/changelog.html" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link">
+  Home
+</a></li><li class="dropdown-item"><!----> <a href="/en/reference/token.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/cn/reference/token.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span></span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>支付</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cn/reference/checkout-redirect.html" class="sidebar-link">集成接口下单</a></li><li><a href="/cn/reference/token.html" aria-current="page" class="active sidebar-link">获取信用卡Token</a></li><li><a href="/cn/reference/api-direct.html" class="sidebar-link">直连接口下单并支付</a></li><li><a href="/cn/reference/api-installments.html" class="sidebar-link">直连信用卡分期查询</a></li><li><a href="/cn/reference/bank-query.html" class="sidebar-link">银行查询</a></li><li><a href="/cn/reference/trade-query.html" class="sidebar-link">订单查询</a></li><li><a href="/cn/reference/refund.html" class="sidebar-link">退款</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>通知</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="获取信用卡token"><a href="#获取信用卡token" class="header-anchor">#</a> 获取信用卡Token</h1> <h3 id="使用luxpag-javascript集成库"><a href="#使用luxpag-javascript集成库" class="header-anchor">#</a> 使用Luxpag JavaScript集成库</h3> <p>采用<a href="api-direct">直连接口下单</a>，信用卡支付，需要使用 <a target="_blank" href="https://res.luxpag.com/lib/js/luxpag.js">luxpag.js 库</a>，以便获取直连接口 token 和 fingerprint 参数。</p> <h3 id="集成步骤"><a href="#集成步骤" class="header-anchor">#</a> 集成步骤</h3> <h4 id="_1-添加-luxpag-js-引用到您的支付页面"><a href="#_1-添加-luxpag-js-引用到您的支付页面" class="header-anchor">#</a> 1. 添加 luxpag.js 引用到您的支付页面</h4> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>不建议将此luxpag.js本地缓存</p></div> <div class="language- extra-class"><pre class="language-text"><code>&lt;script src=&quot;https://res.luxpag.com/lib/js/luxpag.js&quot;&gt;&lt;/script&gt;
+</code></pre></div><h4 id="_2-获取-app-id-和-public-key"><a href="#_2-获取-app-id-和-public-key" class="header-anchor">#</a> 2. 获取 APP ID 和 Public Key</h4> <p>在Luxpag商户后台APP List管理页面找到APP，点击查看详情，找到APP ID 和 Public Key，给Luxpag.setPublishableKey赋值。
+prod：生产环境，sandbox：测试环境</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+  Luxpag.setPublishableKey('${app_id}','${public_key}','sandbox | prod')
+&lt;/script&gt;
+</code></pre></div><h4 id="_3-创建-luxpag专用表单组件"><a href="#_3-创建-luxpag专用表单组件" class="header-anchor">#</a> 3. 创建 luxpag专用表单组件</h4> <p>保证现有表单中存在如下字段，并按格式添加data-checkout属性。</p> <table><thead><tr><th style="text-align:left;">参数名</th> <th style="text-align:center;">必须</th> <th>描述</th></tr></thead> <tbody><tr><td style="text-align:left;">luxpagCardNumber</td> <td style="text-align:center;">yes</td> <td>信用卡卡号</td></tr> <tr><td style="text-align:left;">luxpagSecurityCode</td> <td style="text-align:center;">yes</td> <td>安全码CVV</td></tr> <tr><td style="text-align:left;">luxpagCardExpirationYear</td> <td style="text-align:center;">yes</td> <td>过期年（四位）</td></tr> <tr><td style="text-align:left;">luxpagCardExpirationMonth</td> <td style="text-align:center;">yes</td> <td>过期月（两位）</td></tr> <tr><td style="text-align:left;">luxpagCardholderName</td> <td style="text-align:center;">yes</td> <td>持卡人姓名</td></tr> <tr><td style="text-align:left;">luxpagDocType</td> <td style="text-align:center;">no</td> <td>持卡人ID类型</td></tr> <tr><td style="text-align:left;">luxpagDocNumber</td> <td style="text-align:center;">no</td> <td>持卡人ID</td></tr></tbody></table> <p>例如：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;form method=&quot;post&quot; id=&quot;pay&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;cardNumber&quot;&gt;Credit card number:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; data-checkout=&quot;luxpagCardNumber&quot; maxlength=&quot;16&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;securityCode&quot;&gt;Security code(cvv):&lt;/label&gt;
+            &lt;input type=&quot;text&quot; data-checkout=&quot;luxpagSecurityCode&quot; maxlength=&quot;4&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;cardExpirationYear&quot;&gt;Expiration year:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; data-checkout=&quot;luxpagCardExpirationYear&quot; placeholder=&quot;2021&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;cardExpirationMonth&quot;&gt;Expiration month:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; data-checkout=&quot;luxpagCardExpirationMonth&quot; maxlength=&quot;2&quot; /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;cardholderName&quot;&gt;Card holder name:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; data-checkout=&quot;luxpagCardholderName&quot;  /&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;docType&quot;&gt;Document type:&lt;/label&gt;
+            &lt;select data-checkout=&quot;luxpagDocType&quot;&gt;
+	            &lt;option value=&quot;CPF&quot;&gt;CPF&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label for=&quot;docNumber&quot;&gt;Document number:&lt;/label&gt;
+            &lt;input type=&quot;text&quot; data-checkout=&quot;luxpagDocNumber&quot; placeholder=&quot;12345678&quot; /&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;!-- 存放token值的隐藏域 --&gt;
+    &lt;input name=&quot;token&quot; id=&quot;luxpagToken&quot; type=&quot;hidden&quot;&gt;
+    &lt;!-- 存放fingerprint值的隐藏域 --&gt;
+    &lt;input name=&quot;fingerprint&quot; id=&quot;luxpagFingerprint&quot; type=&quot;hidden&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Pay!&quot; /&gt;
+&lt;/form&gt;
+</code></pre></div><p>其中两个隐藏域</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 存放token值的隐藏域 --&gt;
+&lt;input name=&quot;token&quot; id=&quot;luxpagToken&quot; type=&quot;hidden&quot;&gt;
+&lt;!-- 存放fingerprint值的隐藏域 --&gt;
+&lt;input name=&quot;fingerprint&quot; id=&quot;luxpagFingerprint&quot; type=&quot;hidden&quot;&gt;
+</code></pre></div><h4 id="_4-监听form提交事件"><a href="#_4-监听form提交事件" class="header-anchor">#</a> 4.监听form提交事件</h4> <p>网站原有提交事件前调用：Luxpag.createToken函数，传入form表单元素并更新上面两个隐藏域。</p> <div class="language- extra-class"><pre class="language-text"><code>var $form = document.querySelector('#pay')
+Luxpag.createToken($form, responseHandler)
+</code></pre></div><p>例如：</p> <div class="language- extra-class"><pre class="language-text"><code>document.querySelector(&quot;#pay&quot;).addEventListener(&quot;submit&quot;,function(e){
+        e.preventDefault() 
+        var $form = document.querySelector('#pay')
+        Luxpag.createToken($form, responseHandler)
+    })
+
+    function responseHandler(res){
+        if(res.status != 200){
+            // create token fail
+            alert(res.message)
+        }else{
+            // create token success
+            alert(res.message+&quot; token=&quot;+document.querySelector(&quot;#luxpagToken&quot;).value
+            +&quot;; fingerprint=&quot;+document.querySelector(&quot;#luxpagFingerprint&quot;).value)
+        }
+    }
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cn/reference/checkout-redirect.html" class="prev">
+        集成接口下单
+      </a></span> <span class="next"><a href="/cn/reference/api-direct.html">
+        直连接口下单并支付
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f3b57d1f.js" defer></script><script src="/assets/js/2.9c343760.js" defer></script><script src="/assets/js/24.681e6971.js" defer></script>
+  </body>
+</html>
